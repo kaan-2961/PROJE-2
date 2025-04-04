@@ -98,9 +98,9 @@ model.optimize()
 #  Çıktılar
 if model.SolCount > 0:
     total_cost = model.ObjVal
-    print(f"\n✅ Çözüm Bulundu! Toplam Maliyet: {total_cost:.2f} TL\n")
+    print(f"\n Çözüm Bulundu! Toplam Maliyet: {total_cost:.2f} TL\n")
     for k in range(K):
-        print(f"🛻 Araç {k+1} rotası:")
+        print(f" Araç {k+1} rotası:")
         for i in range(n):
             for j in range(n):
                 if i != j and x[i, j, k].X > 0.5:
